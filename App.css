@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f0fc; /* Light Purple */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* App Container */
+  .app-container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6a4cbb; /* Purple */
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6a4cbb; /* Purple */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #5a3fa0; /* Darker Purple */
+  }
+  
+  /* Contexts Box */
+  .context-box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .context-box p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .context-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .context-box li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #6a4cbb;
+  }
+  
+  /* Books Grid */
+  .books-container {
+    margin-top: 20px;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .book-details {
+    padding: 20px;
+  }
+  
+  .book-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a4cbb;
+    margin: 10px 0;
+  }
+  
+  .book-details p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Description on Hover */
+  .book-card:hover .book-description {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .book-description {
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Modal for Book Details */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    font-size: 2rem;
+    color: #6a4cbb;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .modal-content p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .book-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #6a4cbb;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #5a3fa0;
+  }
+  
